@@ -13,14 +13,17 @@
   color: white;
 }
 .special {
-  position: relative;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
   z-index: -3;
-  background: url(../imgs/bg_car.png);
+  background: url(../imgs/bg_car.png) no-repeat;
   background-size: cover;
+  /* height: 400px; */
 }
 .spec {
   position: relative;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .spec_title {
   padding: 5px 25px;
@@ -55,7 +58,6 @@
 .sp1,
 .sp2 {
   margin-right: 25px;
-  
 }
 .sp_new {
   border: none;
