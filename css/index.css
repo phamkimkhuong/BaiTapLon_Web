@@ -68,3 +68,13 @@
 .sp1 {
   border-bottom: 3px solid rgb(85, 211, 210);
 }
+.main {
+  background-color: rgb(244, 244, 244);
+}
+.nav-item > a {
+  color: black;
+}
+.active {
+  border-bottom: 4px solid rgb(85, 211, 210);
+  color: black;
+}
