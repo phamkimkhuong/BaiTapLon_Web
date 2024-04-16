@@ -78,3 +78,32 @@
   border-bottom: 4px solid rgb(85, 211, 210);
   color: black;
 }
+.tab-pane {
+  border-bottom: none;
+}
+
+.rice > div > p:last-child {
+  color: rgb(225, 77, 18);
+  font-weight: 700;
+}
+.rice > div > p:first-child {
+  font-size: 0.9em;
+}
+.rice > :first-child {
+  float: left;
+  display: block;
+}
+.rice > :last-child {
+  float: right;
+}
+.cart {
+  margin-top: 10px;
+  font-size: 1.6em;
+  color: rgb(79, 206, 209);
+}
+.card-text {
+  text-decoration: line-through;
+}
+.footer-link {
+  background-color: rgb(1, 25, 72);
+}
