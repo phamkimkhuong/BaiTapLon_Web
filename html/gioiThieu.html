@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/gioiThieu.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div
+        class="row col-md-12 col-12 d-flex flex-row justify-content-around align-items-center"
+      >
+        <div class="logo">
+          <img class="img_logo" src="../imgs/logo.png" alt="" />
+        </div>
+        <nav class="nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="../html/index.html">TRANG CHỦ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
+              >SẢN PHẨM</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TIN TỨC</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LIÊN HỆ</a>
+          </li>
+        </nav>
+        <div class="icon">
+          <button class="user">
+            <i class="fas fa-user"></i>
+          </button>
+          <div id="options" class="hidden">
+            <p>Đăng ký</p>
+            <p>Đăng nhập</p>
+          </div>
+          <a href="#" class="shop">
+            <i class="fas fa-shopping-basket p-lg-2"></i>
+          </a>
+        </div>
+      </div>
+      <div
+        class="row col-md-12 col-12 d-flex flex-row justify-content-around bg-info"
+      >
+        <nav class="navbar d-inline navbar-light">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars" style="color: white"></i>
+          </button>
+          <a class="navbar-brand text-white" href="#">Danh mục sản phẩm</a>
+          <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#"
+                  >Phụ kiện nội thất <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  id="dropdownId"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Phụ kiện ngoại thất</a
+                >
+                <div class="dropdown-menu" aria-labelledby="dropdownId">
+                  <a class="dropdown-item" href="#"></a>
+                  <a class="dropdown-item" href="#"></a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="p-2">
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="text"
+              placeholder="Từ khóa cần tìm"
+            />
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">
+              TÌM KIẾM
+            </button>
+          </form>
+        </div>
+        <div class="d-flex flex-row">
+          <div class="p-3">
+            <i class="fas fa-phone-volume"></i>
+          </div>
+          <div class="text-white d-flex flex-column">
+            <div>Hotline</div>
+            <div>012-345-6789</div>
+          </div>
+        </div>
+      </div>
+      <div class="main center row col-12 col-md-12">
+        <!-- <div class="ml-5 center-top">
+          <a class="mr-2" href="../html/index.html">Trang chủ</a>/
+          <a class="ml-2" href="#">Sản Phẩm</a>
+        </div> -->
+        <div class="mt-4 row col-12 col-md-12 d-flex justify-content-center">
+          <div class="col-3">
+            <div class="danhMuc bg-white p-3">
+              <h5 style="color: rgb(79, 206, 209)">DANH MỤC</h5>
+              <hr style="background-color: rgb(79, 206, 209)" />
+              <ul>
+                <li>
+                  <a href="#"> Lazang, Mâm đúc </a>
+                </li>
+                <li>
+                  <a href="#"> Phụ kiện nội thất</a>
+                </li>
+                <li>
+                  <a href="#"> Phụ kiện ngoại thất </a>
+                </li>
+                <li>
+                  <a href=""> Đồ chơi phụ kiện </a>
+                </li>
+              </ul>
+            </div>
+            <div class="bg-white p-3 mt-4">
+              <h5 style="color: rgb(79, 206, 209)">TÌM THEO</h5>
+              <hr style="background-color: rgb(79, 206, 209)" />
+              <p>Giá sản phẩm</p>
+              <section class="ml-3">
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Dưới 10 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 10 triệu - 15 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 15 triệu - 20 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 20 triệu - 25 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 25 triệu - 30 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 30 triệu - 35 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Từ 35 triệu đến 40 triệu</label>
+                </div>
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Trên 40 triệu</label>
+                </div>
+              </section>
+              <b>Loại</b>
+              <div class="d-flex mt-2">
+                <input type="text" placeholder="Tìm Loại" />
+                <button class="btn btn-primary">Tìm</button>
+              </div>
+            </div>
+          </div>
+          <div class="ml-3 col-8">
+            <h5>SẢN PHẨM</h5>
+            <div class="d-flex">
+              <div>Xếp theo</div>
+              <section
+                class="ml-3 mb-3 d-flex justify-content-between align-items-center"
+              >
+                <div>
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Tên A-Z</label>
+                </div>
+                <div class="ml-4">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Tên Z-A</label>
+                </div>
+                <div class="ml-4">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Hàng mới</label>
+                </div>
+                <div class="ml-4">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Giá thấp đến cao</label>
+                </div>
+                <div class="ml-4">
+                  <input type="checkbox" name="" id="" />
+                  <label for="">Giá cao xuống thấp</label>
+                </div>
+              </section>
+            </div>
+            <div class="col-md-10 col-10">
+              <div class="card-deck">
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang11.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang12.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang13.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck mt-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang22.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang23.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang24.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck mt-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang26.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang27.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang28.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck mt-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang32.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang33.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang34.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-deck mt-3">
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang36.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang37.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card" style="width: 18rem">
+                  <img
+                    class="card-img-top"
+                    src="../imgs/lazang38.png"
+                    alt="Card image cap"
+                  />
+                  <div class="card-body">
+                    <p class="card-title">
+                      LAZANG ĐÚC 14 INCH ĐỘ CHO XE HYNDAI GRAND I10 CHÍNH HÃNG
+                    </p>
+                    <div class="rice">
+                      <div>
+                        <p class="card-text">22.999.000đ</p>
+                        <p>20.999.000đ</p>
+                      </div>
+                      <a href="#" class="cart">
+                        <i class="fas fa-lg fa-shopping-cart"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="container-fluid text-center mt-lg-5">
+        <!-- Grid container -->
+        <div class="container-fluid">
+          <section class="pb-4 input-dk text-white pt-4">
+            <h3>ĐĂNG KÝ ĐỂ NHẬN TIN</h3>
+            <div>
+              Đăng ký để nhận thông tin khuyến mãi mới nhất từ chúng tôi
+            </div>
+            <form action="">
+              <!--Grid row-->
+              <div class="row d-flex justify-content-center mt-3">
+                <!--Grid column-->
+                <div class="col-md-5 col-12">
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4">
+                    <input
+                      type="email"
+                      id="form5Example24"
+                      class="form-control"
+                      placeholder="Nhập địa chỉ email"
+                    />
+                  </div>
+                </div>
+                <div class="col-auto">
+                  <!-- Submit button -->
+                  <button
+                    data-mdb-ripple-init
+                    type="submit"
+                    class="btn btn-info mb-4"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </form>
+          </section>
+          <!-- Section: Form -->
+          <section class="text-white footer-link pt-4">
+            <!--Grid row-->
+            <div class="row">
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Links</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-body" href="#!">Thông tin</a>
+                  </li>
+                  <li>
+                    Địa chỉ: Ladeco Buiding, 266 Doi Can Street, Ba Dinh
+                    District, Hanoi, Vietnam
+                  </li>
+                  <li>Holine: 1900 1009</li>
+                  <li>Email: support@sapo.vn</li>
+                  <li>
+                    Showroom mở cửa tất cả ngày trong tuần từ 10:00 sáng đến
+                    6:00 tối
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Về Chúng Tôi</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-body" href="#!">Trang chủ</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Giới Thiệu</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Sản Phẩm</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Tin Tức</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Liên Hệ</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Hướng Dẫn</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-body" href="#!">Hướng dẫn mua hàng</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Hướng dẫn thanh toán</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Hướng dẫn giao hàng</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Hướng dẫn đổi trả</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Chính sách ưu đai</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+
+              <!--Grid column-->
+              <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase">Liên Hệ</h5>
+
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a class="text-body" href="#!">Bộ phân tư vấn thiết kế</a>
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!"
+                      >Bộ phận chăm sóc khách hàng</a
+                    >
+                  </li>
+                  <li>
+                    <a class="text-body" href="#!">Hotline CSKH</a>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </section>
+          <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

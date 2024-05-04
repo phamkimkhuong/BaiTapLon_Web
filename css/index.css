@@ -2,6 +2,13 @@
   padding-left: 0px;
   padding-right: 0px;
 }
+.user,
+.shop {
+  color: black;
+}
+.hidden {
+  display: none;
+}
 .img_logo {
   width: 100%;
   height: 100px;
@@ -106,4 +113,10 @@
 }
 .footer-link {
   background-color: rgb(1, 25, 72);
+}
+.footer-link a {
+  color: white;
+}
+.input-dk {
+  background: url(../imgs/pexels-albin-berlin-919073.jpg);
 }

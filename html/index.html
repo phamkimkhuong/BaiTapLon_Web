@@ -15,7 +15,9 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row col-md-12 col-12 d-flex flex-row justify-content-around">
+      <div
+        class="row col-md-12 col-12 d-flex flex-row justify-content-around align-items-center"
+      >
         <div class="logo">
           <img class="img_logo" src="../imgs/logo.png" alt="" />
         </div>
@@ -24,8 +26,12 @@
             <a class="nav-link" href="#">TRANG CHỦ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
-              >GIỚI THIỆU</a
+            <a
+              class="nav-link"
+              href="../html/gioiThieu.html"
+              tabindex="-1"
+              aria-disabled="true"
+              >SẢN PHẨM</a
             >
           </li>
           <li class="nav-item">
@@ -35,7 +41,18 @@
             <a class="nav-link" href="#">LIÊN HỆ</a>
           </li>
         </nav>
-        <div class="icon"></div>
+        <div class="icon">
+          <button class="user">
+            <i class="fas fa-user"></i>
+          </button>
+          <div id="options" class="hidden">
+            <p>Đăng ký</p>
+            <p>Đăng nhập</p>
+          </div>
+          <a href="#" class="shop">
+            <i class="fas fa-shopping-basket p-lg-2"></i>
+          </a>
+        </div>
       </div>
       <div
         class="row col-md-12 col-12 d-flex flex-row justify-content-around bg-info"
@@ -1130,15 +1147,12 @@
     <footer class="container-fluid text-center mt-lg-5">
       <!-- Grid container -->
       <div class="container-fluid">
-        <section class="mb-4">
-          <div>ĐĂNG KÝ ĐỂ NHẬN TIN</div>
+        <section class="pb-4 input-dk text-white pt-4">
+          <h3>ĐĂNG KÝ ĐỂ NHẬN TIN</h3>
           <div>Đăng ký để nhận thông tin khuyến mãi mới nhất từ chúng tôi</div>
-        </section>
-        <!-- Section: Form -->
-        <section class="">
           <form action="">
             <!--Grid row-->
-            <div class="row d-flex justify-content-center">
+            <div class="row d-flex justify-content-center mt-3">
               <!--Grid column-->
               <div class="col-md-5 col-12">
                 <!-- Email input -->
@@ -1176,16 +1190,17 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a class="text-body" href="#!">Link 1</a>
+                  <a class="text-body" href="#!">Thông tin</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Về Chúng Tôi</a>
+                  Địa chỉ: Ladeco Buiding, 266 Doi Can Street, Ba Dinh District,
+                  Hanoi, Vietnam
                 </li>
+                <li>Holine: 1900 1009</li>
+                <li>Email: support@sapo.vn</li>
                 <li>
-                  <a class="text-body" href="#!">Hướng Dẫn</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Liên Hệ</a>
+                  Showroom mở cửa tất cả ngày trong tuần từ 10:00 sáng đến 6:00
+                  tối
                 </li>
               </ul>
             </div>
@@ -1206,7 +1221,10 @@
                   <a class="text-body" href="#!">Sản Phẩm</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 4</a>
+                  <a class="text-body" href="#!">Tin Tức</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Liên Hệ</a>
                 </li>
               </ul>
             </div>
@@ -1218,16 +1236,19 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a class="text-body" href="#!">Link 1</a>
+                  <a class="text-body" href="#!">Hướng dẫn mua hàng</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 2</a>
+                  <a class="text-body" href="#!">Hướng dẫn thanh toán</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 3</a>
+                  <a class="text-body" href="#!">Hướng dẫn giao hàng</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 4</a>
+                  <a class="text-body" href="#!">Hướng dẫn đổi trả</a>
+                </li>
+                <li>
+                  <a class="text-body" href="#!">Chính sách ưu đai</a>
                 </li>
               </ul>
             </div>
@@ -1239,16 +1260,13 @@
 
               <ul class="list-unstyled mb-0">
                 <li>
-                  <a class="text-body" href="#!">Link 1</a>
+                  <a class="text-body" href="#!">Bộ phân tư vấn thiết kế</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 2</a>
+                  <a class="text-body" href="#!">Bộ phận chăm sóc khách hàng</a>
                 </li>
                 <li>
-                  <a class="text-body" href="#!">Link 3</a>
-                </li>
-                <li>
-                  <a class="text-body" href="#!">Link 4</a>
+                  <a class="text-body" href="#!">Hotline CSKH</a>
                 </li>
               </ul>
             </div>
@@ -1261,6 +1279,7 @@
       <!-- Grid container -->
     </footer>
     <!-- Footer -->
+
     <script src="../js/index.js"></script>
   </body>
 </html>
