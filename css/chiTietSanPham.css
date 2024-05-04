@@ -1,0 +1,16 @@
+[class*="col-"] {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.user,
+.shop {
+  color: black;
+}
+.hidden {
+  display: none;
+}
+.img_logo {
+  width: 100%;
+  height: 100px;
+  padding-bottom: 20px;
+}
