@@ -34,7 +34,7 @@ btnDK.onclick = function () {
       // Thêm người dùng mới vào mảng
       users.push(newUser);
       localStorage.setItem("users", JSON.stringify(users));
-      // window.location.href = "../html/index.html";
+      note.innerHTML = "Đăng ký thành công";
     }
   }
 };
